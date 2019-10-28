@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About us</title>
+    <script src="https://kit.fontawesome.com/665042679c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars" onclick="myFunction()"></i>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/index.html">Home</a>
+
+                    <a onclick="document.getElementById('id02').style.display='block'">Log in</a>
+    <div id="id02" class="modal2">
+  <span onclick="document.getElementById('id02').style.display='none'"
+class="close2" title="Close Modal">X</span>
+
+  <form class="modal-content2 animate" action="/action_page.php">
+    <div class="imgcontainer2">
+          </div>
+
+    <div class="fillLogin">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="fillLogin" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw2">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+                    <a onclick="document.getElementById('id01').style.display='block'">Sign up</a>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="fill">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="https://www.termsandconditionsgenerator.com/" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+                    </div>
+            </span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARoAAACgCAMAAADkS1MvAAAAY1BMVEX///8AAACMxj+AgIDG45+/v7+p1G8QEBCTykvf39/4+/PPz8/p9NtgYGDU6rcgICC324fi8c+i0WOvr6+Pj49AQEAwMDBwcHCw2Hufn5/x+OdQUFDv7++azVfN5qu+35Pb7cMmSre9AAADL0lEQVR4nO3Ye3eaMBzG8WjFCwpaay1qrXv/r3IzN3IFW2TnbOf7+WeSQEye5UdBIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8F4qXwCrsiRqsom+gqE01nxLN4bzOs5juKn+1TV8b3aiO2uvr+3FtOnz1I8G8LCYhu96LbjjYk6NzF4fugeIrZPN7ojmc2es0poLZ+Y3zV9msDnb2+rnssx3+JQ8kU6WnLn2ahmM+msmk6hxohGjKfdRct9FM7YYYGE1q5jaak21ZdZ1+6hpohGjmifazk8Drc6KJi8CJpp2/qZpkANuugZ4bzfJP8yaxUllG9qTNM6Ip5JyO62TnSi1cnpG5XAWy6hko7yWZScKuXfRMfmzOuudLHl6Fk8C+lD3zxzLIOMipvXV0Lt7M6lNOZhd0DpT3aDROMqKRn8ugT7ibo5Edw6LpnNrx3lepUvlIn1L4dfPc72+5yagV79vOWRzN9GZPHCWald4Ilb2fxPqjyTzXPPD9LS+ZaMV+NM1S/lO7J/7ouSac2sqZuqonIVRFpe8i2WjsQJnb8Hei8ZPpiWZWq32zGXobDqdWOFPX9SS6KiobTdAxJJogmb5o9PHyPF40pp6E+MhX1F+IJkymNxp9xb4cLRpTT0Ks8xU1ejT6yddJpj8afU0zWjRbU0/6Y7Ki+qP53veHEsn0RyPK5Xcy6JxauyHaFa1tPemKWqSuD6JJDfTA92e7U8moaJbtcRyN2CyHR6NWUAXH9xW5cbgx+S7m/HCgyzOiSSajo7B/fctrHI2oh0ej7rWTo3niqOyKtu5S7UHwlHKcmKUFA21tx4DnGvOG3fi/19Re6+1qE3Ci0flNBzzXJF/z7tH4G8VuoeTrZZUbqMpc8eBtOPPm7d5JrDqIRpifdH7+5r1OvTEX4e3FBpVa6OIzM5DseH40TrX4K/WiMVtuwE9Z621y6l49tYeJhW7XmYFUxwjRiDrcN00ZRWM214BoxOfhPfwPL6Ibr9lE4UIXl1N6INsxRjTifHN+zrru9G9XfjT6z9SQaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg3/Qboz8lStWFP2gAAAAASUVORK5CYII="
+                alt="logo" />
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <h1 id="aboutTitle">About us</h1>
+    <hr><br>
+    <p id="aboutText"> Are you looking for the latest electronics?<br>
+        If you are as passionate about technology as we are, you’ll love what the Gadget Zone has to offer.<br>
+        In a quest to offer Scandinavians the latest and greatest gadgets, we founded the first store in 2019. With our
+        commitment to sourcing the most innovative products just for you, we have expanded our range to over 8
+        product lines. From computer accessories to business and office toys, our extraordinary gizmos have got you
+        covered whatever your needs are.<br>
+        Whether you are a tech geek or you are looking for the best gift ever, we are here to inspire you. And up the
+        fun by grabbing some of our boy’s toys and taking them for a spin.<br>
+        With our user-friendly online store, you can be the first to get your hands on the latest electronics and
+        super-toys without leaving the comfort of your home. Now you can find everything electronic, intelligent,
+        technological and FUN in one place.</p> <br>
+
+    <footer class="main-footer">
+        <div class="contain main-footer-container">
+            <h3 class="brand-name">&copy KSE project 2019</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="https://pbs.twimg.com/profile_images/1111729635610382336/_65QFl7B.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEVCZ7L///+5w95GarM2YK80Xq+pttc+ZbFfe7s6YrCHmsmZqdA8Y7Ds8PdSdLlffr3V3OyQpNFrh8Lg5vIvW633+fyCmsxKb7fG0eier9WtutnAy+Ta4e91jsR8k8eMn8zP1ulvh8Dx9PkmVqvo7ff2SOu1AAAEYklEQVR4nO3da3uqOBSG4YDBmDYkHEStp1qn//83jqfuvWemoxGarBWu9/myP9XNfS0sIJGK7FpZ1Y0VY8k2dVXeZOL6T+6kNtTb9YMZLV3+h7B1cky8a0a69ktYWU29OUHStroKWzu+AV4ztr0I3TgneE67szCX1NsRMJlnonRj3UfPGVeKaswjPA2xEvV434XndC2aMe+kp920EeM5Vfu+sfsQQgghhBBCCCGEEPJJKWOM1lpKfc5cUkoo6g37mbQshG12+8XLe/1+6mWx3+8+GjezSyXnRXESq1SpyuhiPlmsq21bHrvudrc667ruWJafn227rQ6b9euisUWStySUFM3r6pfrfq/pEc18Oa2OfryzMLW7Lnry4Tu9JGeoin31DC+1GSrjDk/NL7UZmsn0aV9SM5R2+7wvoRmq4q3HABMSnoC9fMnspWqy6glMZIbKbPoCU5lhf2AaMyym/YFJzFDXA4ApzNA0/qfZSc5QyWfPRFOboR7yJkxBaNygfTSBvXTe+1CfyAyNGwjkPkOlhv2a4T9Ds+t3QZHODE0+FMh8hmo5eITMZygHna+lMEPZ63OLhITGlY8FD4Wc91LZ95OLfwgZz1ANufD9LWQ8Q2U/f0LIeIZm9gSk267y9Xo9/XfrD8bfFtELX95xs58tJ0rLb2IMFIXnCU05nRQmyRvbc7+jYTXTCeIuSa9r343ivB/eb+kjLJfpAk3jc9q9Y3wweJTZewhXyS4nEZ4XFu8Jj1Do18fA0iY8Qq/z7kNBvZVD8rkfM01aKNceb0PGFw6P8zlpS/tL2D7C2eiFSf8q9RIuqTdyUD7CCfVGDgpCCPkHIYT8gxBC/kEIIf8ghJB/EELIv1EI1Xc33r/6y0NoinuvcIr4E2Pl/rt24o88bnLf+/FLb7RE/fLYMLDP+diFK9pbNxGEa9o7qBGExKvaIghfxi7sdrQ3p8ILqR9FHl7YEt9+Cy+sJmMXHoiX24QX5sRrNcIL30Y/wz3xSobwQuq/WxFeSOuLIOxor50iCNvRCzfUC/uCC8mXLgYX1tQriIMLqQ+HwYUd+eLM0MLSUS9dDC3cki/ODC08EF8dhhduqN+GwYXEH5ZGENJ/BTiwsCM/HAYXkh8OQwuP9OvcQwupz7uDC7fUV4cn4XtQIfG9w3Nq6Wb/n/V4ZsS9n59x+LuG6l5zj5UKwtx5AWrdw0ax2uRuEELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8g/EEh0bMJogmtIHrMSyyhaURN8zCiWEJdi4rmgVKxhLISRA82jyQ0rhRZTjLESEKZZyLrHMU7MY5Qu+wkzFpLsJ9GERrbXoRZZeNPMYZQ2yq7CrPWydhjDC800rXZlzDrcid1VGRgodHS3f4HcXu1sqqbmCdwYYW2qavy9ip/A3YKUMidEST2AAAAAElFTkSuQmCC">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img
+                            src="data:image/jpeg;base64,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">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="App.js"></script>
+</div>
+</body>
+
+</html>
